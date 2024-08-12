@@ -1,12 +1,3 @@
-/*
-script.js
-
-This file contains the JavaScript logic for the Lottery Quiz Game. 
-It includes functions to fetch and display questions, handle user interactions, calculate scores, 
-and manage the game flow.
-*/
-
-
 // global variables and DOM elements references
 let questions = [];
 const questionContainer = document.getElementById('question-container');
@@ -19,9 +10,14 @@ const resultMessage = document.getElementById('result-message');
 const restartButton = document.getElementById('restart-btn');
 const feedbackElement = document.getElementById('feedback');
 const questionCounter = document.getElementById('question-counter');
+const playerSetup = document.getElementById('player-setup');
+const numPlayersSelect = document.getElementById('num-players');
+const playerInputs = document.querySelectorAll('#player-names input');
+const startGameButton = document.getElementById('start-game-btn');
 
 let currentQuestionIndex = 0;
-let score = 0;
+let currentPlayerIndex = 0;
+let players = [];
 let selectedAnswer = null;
 let hasAnswered = false;
 
@@ -40,24 +36,40 @@ function selectRandomQuestions(allQuestions, numQuestions) {
     return shuffled.slice(0, numQuestions);
 }
 
+// event listener to show/hide player name inputs based on number of players
+numPlayersSelect.addEventListener('change', function() {
+    const numPlayers = parseInt(this.value);
+    playerInputs.forEach((input, index) => {
+        input.style.display = index < numPlayers ? 'block' : 'none';
+    });
+});
+
 // initialize and start the game
 function startGame() {
-    fetch('./questions.json') // fetch questions from the json file
+    const numPlayers = parseInt(numPlayersSelect.value);
+    players = [];
+    for (let i = 0; i < numPlayers; i++) {
+        const playerName = playerInputs[i].value || `Player ${i + 1}`;
+        players.push({ name: playerName, score: 0 });
+    }
+    
+    playerSetup.style.display = 'none';
+    questionContainer.style.display = 'block';
+    
+    fetch('./questions.json')
     .then(response => response.json())
     .then(data => {
-        questions = selectRandomQuestions(data, 12); // select 12 random questions
+        questions = selectRandomQuestions(data, 12);
         currentQuestionIndex = 0;
-        score = 0;
+        currentPlayerIndex = 0;
         selectedAnswer = null;
         hasAnswered = false;
-        nextButton.classList.add('hide'); // hide the next button initially
-        nextButton.style.display = ''; // reset the next button display properly
+        nextButton.classList.add('hide');
         feedbackElement.classList.add('hide');
         feedbackElement.innerText = '';
         resultContainer.style.display = 'none';
-        questionContainer.style.display = 'block';
-        showQuestion(questions[currentQuestionIndex]); // display the question
-        updateQuestionCounter(); // update the question counter
+        showQuestion(questions[currentQuestionIndex]);
+        updateQuestionCounter();
     })
     .catch(error => console.error('Error fetching questions:', error));
 }
@@ -67,10 +79,10 @@ function updateQuestionCounter() {
     questionCounter.innerText = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 }
 
-
-// display a question and the options to asnwer it
+// display a question and the options to answer it
 function showQuestion(question) {
-    questionElement.innerText = question.question;
+    const currentPlayer = players[currentPlayerIndex];
+    questionElement.innerText = `${currentPlayer.name}'s turn: ${question.question}`;
     answerButtonsElement.innerHTML = '';
     question.options.forEach(option => {
         const button = document.createElement('button');
@@ -89,41 +101,34 @@ function showQuestion(question) {
 function selectAnswer(button, selectedOption, correctAnswer) {
     if (hasAnswered) return;
 
-    // remove underline from previously selected answer
     Array.from(answerButtonsElement.children).forEach(btn => {
         btn.classList.remove('selected');
     });
 
     selectedAnswer = { button, selectedOption, correctAnswer };
-    button.classList.add('selected'); // underline the selected answer
+    button.classList.add('selected');
     nextButton.classList.remove('hide');
 }
 
 // show feedback for the answer selected
 function showAnswerFeedback() {
     const { button, selectedOption, correctAnswer } = selectedAnswer;
-    const currentQuestion = questions[currentQuestionIndex];  
+    const currentQuestion = questions[currentQuestionIndex];
+    const currentPlayer = players[currentPlayerIndex];
 
     if (selectedOption === correctAnswer) {
         button.classList.add('correct');
-        score++;
-        if (currentQuestion.correct_explanation) {
-            feedbackElement.innerText = currentQuestion.correct_explanation;
-        } else {
-            feedbackElement.innerText = 'Correct!';
-        }
+        currentPlayer.score++;
+        feedbackElement.innerText = currentQuestion.correct_explanation ? currentQuestion.correct_explanation : 'Correct!';
     } else {
         button.classList.add('incorrect');
-        if (currentQuestion.incorrect_explanation) {
-            feedbackElement.innerText = currentQuestion.incorrect_explanation;
-        } else {
-            feedbackElement.innerText = `Answer: ${correctAnswer}`;
-        }
+        feedbackElement.innerText = currentQuestion.incorrect_explanation ? currentQuestion.incorrect_explanation : `Answer: ${correctAnswer}`;
     }
+
     feedbackElement.classList.remove('hide');
     nextButton.innerText = 'Next';
     nextButton.classList.remove('hide');
-    hasAnswered = true; // mark the question as answered after showing feedback
+    hasAnswered = true;
 }
 
 // handle the "Next" button click
@@ -138,6 +143,7 @@ function handleNextQuestion() {
 // move to the next question or show the result if it was the last question
 function proceedToNextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
+        currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
         currentQuestionIndex++;
         selectedAnswer = null;
         hasAnswered = false;
@@ -148,41 +154,58 @@ function proceedToNextQuestion() {
         nextButton.innerText = 'Submit';
         updateQuestionCounter();
     } else {
-        showResult(); // show final result if all answers have been answered
+        showResult();
     }
 }
 
 // show final result and handle the pass/fail
 function showResult() {
     questionContainer.style.display = 'none';
-    nextButton.classList.add('hide'); // ensure the Next button is hidden
-    nextButton.style.display = 'none'; // ensure the Next button is hidden
+    nextButton.classList.add('hide');
+    nextButton.style.display = 'none';
     resultContainer.style.display = 'block';
-    questionCounter.classList.add('hide-counter'); // hide question counter
-    const percentage = (score / questions.length) * 100;
-    scoreElement.innerText = `Your score: ${score}/${questions.length} (${percentage.toFixed(2)}%)`;
-    if (percentage >= 80) {
-        resultMessage.innerText = 'Congratulations, you passed!';
-        // trigger confetti if player wins
+    questionCounter.classList.add('hide-counter');
+
+    let winner = players[0];
+    players.forEach(player => {
+        if (player.score > winner.score) {
+            winner = player;
+        }
+    });
+
+    scoreElement.innerText = `Winner: ${winner.name} with a score of ${winner.score}`;
+    resultMessage.innerText = players.map(p => `${p.name}: ${p.score}`).join('\n');
+
+    if ((winner.score / questions.length) * 100 >= 80) {
         confetti({
             particleCount: 100,
             spread: 70,
             origin: { y: 0.6 }
         });
     } else {
-        resultMessage.innerText = 'Sorry, you did not pass. \nYou need a score of 80% or higher to pass. \nBetter luck next time!';
+        resultMessage.innerText += '\nBetter luck next time!';
     }
 }
 
 // event listener for the restart button to start the game again
 restartButton.addEventListener('click', () => {
-    startGame();
+    playerSetup.style.display = 'block';
+    questionContainer.style.display = 'none';
+    resultContainer.style.display = 'none';
+    scoreElement.innerText = '';
+    resultMessage.innerText = '';
+    playerInputs.forEach(input => input.value = '');
 });
 
-// initialize game on load
+// initialize game setup on load
 document.addEventListener('DOMContentLoaded', () => {
-    startGame();
+    playerSetup.style.display = 'block';
+    questionContainer.style.display = 'none';
+    resultContainer.style.display = 'none';
 });
+
+// event listener for the start game button to initialize game
+startGameButton.addEventListener('click', startGame);
 
 // event listener for the next button to handle the next question logic
 nextButton.addEventListener('click', handleNextQuestion);
