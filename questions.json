@@ -1,0 +1,660 @@
+[
+    {
+        "question": "How many numbers (spots) can you select to play in Keno?",
+        "type": "multiple-choice",
+        "options": ["5", "8", "12", "15"],
+        "answer": "12"
+    },
+    {
+        "question": "What is the minimum wager amount you can select for each Keno drawing?",
+        "type": "multiple-choice",
+        "options": ["$0.50", "$1", "$2", "$5"],
+        "answer": "$1"
+    },
+    {
+        "question": "In Keno, what is the maximum number of consecutive drawings you can select to play the same numbers?",
+        "type": "multiple-choice",
+        "options": ["10", "20", "25", "30"],
+        "answer": "30"
+    },
+    {
+        "question": "Which Keno spots are NOT eligible for the Keno Bonus?",
+        "type": "multiple-choice",
+        "options": ["5-Spot, 6-Spot, 7-Spot", "8-Spot, 9-Spot, 10-Spot", "10-Spot, 11-Spot, 12-Spot", "9-Spot, 10-Spot, 11-Spot"],
+        "answer": "10-Spot, 11-Spot, 12-Spot"
+    },
+    {
+        "question": "In Keno, what is the maximum overall prize payout for matching 10 out of 10 numbers in the 10-Spot Game?",
+        "type": "multiple-choice",
+        "options": ["$1,000,000", "$2,000,000", "$5,000,000", "$10,000,000"],
+        "answer": "$2,000,000"
+    },
+    {
+        "question": "How often do Keno drawings take place?",
+        "type": "multiple-choice",
+        "options": ["Every minute", "Every three minutes", "Every five minutes", "Every ten minutes"],
+        "answer": "Every three minutes"
+    },
+    {
+        "question": "In Keno, what is the top prize payout for matching 12 out of 12 in the 12-Spot Game if there are more than two dollars bet on the winning numbers?",
+        "type": "multiple-choice",
+        "options": ["$1,000,000", "$2,000,000", "$3,000,000", "$4,000,000"],
+        "answer": "$2,000,000"
+    },
+    {
+        "question": "You can select from 1 to 12 numbers (spots) to play in Keno.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "The Keno Bonus option allows you to multiply your prizes up to 5 times.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It's up to 10 times",
+        "correct_explanation": "Correct! It's up to 10 times"
+    },
+    {
+        "question": "You can select up to 20 consecutive drawings to play the same numbers in Keno.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It's up to 30 consecutive drawings",
+        "correct_explanation": "Correct! It's up to 30 consecutive drawings"    
+    },
+    {
+        "question": "The maximum overall prize payout for matching 11 out of 11 in the 11-Spot Game is $2,000,000.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Keno drawings take place approximately every three minutes from 5:04am to 1:01am",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Keno Bonus is available on the 10-Spot, 11-Spot, and 12-Spot games.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Not available in those spots",
+        "correct_explanation": "Correct! Keno Bonus is not available in those spots"
+    },
+    {
+        "question": "How many ways are there to play the Wheel of Luck?",
+        "type": "multiple-choice",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3"
+    },
+    {
+        "question": "In the Wheel of Luck, Bet Type A, what is the range of numbers you can pick from?",
+        "type": "multiple-choice",
+        "options": ["1-40", "1-50", "1-36", "1-30"],
+        "answer": "1-36"
+    },
+    {
+        "question": "In the Wheel of Luck, what are the available wager amounts for Bet Type B (ODD or EVEN)?",
+        "type": "multiple-choice",
+        "options": ["$1, $3, $5", "$2, $4, $10", "$1, $2, $5", "$2, $5, $10"],
+        "answer": "$2, $4, $10"
+    },
+    {
+        "question": "In the Wheel of Luck, how many consecutive drawings can you select to play with the same selections?",
+        "type": "multiple-choice",
+        "options": ["Up to 10", "Up to 15", "Up to 20", "Up to 30"],
+        "answer": "Up to 30"
+    },
+    {
+        "question": "In the Wheel of Luck, what is the minimum wager amount for Bet Type A (picking numbers)?",
+        "type": "multiple-choice",
+        "options": ["$1", "$2", "$3", "$5"],
+        "answer": "$1"
+    },
+    {
+        "question": "How often do the Wheel of Luck drawings take place?",
+        "type": "multiple-choice",
+        "options": ["Every minute", "Every three minutes", "Every four minutes", "Every five minutes"],
+        "answer": "Every four minutes"
+    },
+    {
+        "question": "In the Wheel of Luck, what are the available wager amounts for Bet Type C (RED or BLACK)?",
+        "type": "multiple-choice",
+        "options": ["$1, $3, $5", "$2, $4, $10", "$1, $2, $5", "$2, $5, $10"],
+        "answer": "$2, $4, $10"
+    },
+    {
+        "question": "Until what time do the Wheel of Luck drawings take place daily?",
+        "type": "multiple-choice",
+        "options": ["11:58 p.m.", "12:58 a.m.", "1:58 a.m.", "2:58 a.m."],
+        "answer": "12:58 a.m."
+    },
+    {
+        "question": "In the Wheel of Luck, you can pick either ODD or EVEN in Bet Type B.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "In the Wheel of Luck, in Bet Type A, you can pick numbers from 1-40.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It's 1-36",
+        "correct_explanation": "Correct! It's 1-36"
+    },
+    {
+        "question": "In the Wheel of Luck, the available wager amounts for Bet Type A are $1, $2, and $5.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "In the wheel of Luck, you can select up to 15 consecutive drawings to play the same selections.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Up to 30 consecutive drawings",
+        "correct_explanation": "Correct! It's up to 30 consecutive drawings"
+    },
+    {
+        "question": "The Wheel of Luck drawings take place approximately every five minutes.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Every four minutes",
+        "correct_explanation": "Correct! It's every four minutes"
+    },
+    {
+        "question": "In the Wheel of Luck, Bet Type C allows you to pick either RED or BLACK.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "In the Wheel of Luck, the minimum wager amount for Bet Type B is $1.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Minumum wager is $2",
+        "correct_explanation": "Correct! The minimum wager is $2"
+    },
+    {
+        "question": "How many numbers can you select in The Numbers Game?",
+        "type": "multiple-choice",
+        "options": ["Up to 2", "Up to 3", "Up to 4", "Up to 5"],
+        "answer": "Up to 4"
+    },
+    {
+        "question": "What is the range of each number you can select in The Numbers Game?",
+        "type": "multiple-choice",
+        "options": ["0-9", "1-10", "1-9", "0-10"],
+        "answer": "0-9"
+    },
+    {
+        "question": "What is the minimum amount you can wager on The Numbers Game?",
+        "type": "multiple-choice",
+        "options": ["$0.10", "$0.25", "$0.50", "$1.00"],
+        "answer": "$0.25"
+    },
+    {
+        "question": "At what time does the midday drawing for The Numbers Game close?",
+        "type": "multiple-choice",
+        "options": ["1:00 pm", "1:30 pm", "2:00 pm", "2:30 pm"],
+        "answer": "2:00 pm"
+    },
+    {
+        "question": "What percentage of the total amount bet is the prize pool for The Numbers Game?",
+        "type": "multiple-choice",
+        "options": ["53%", "60%", "63%", "70%"],
+        "answer": "63%"
+    },
+    {
+        "question": "When do The Numbers Game drawings occur daily?",
+        "type": "multiple-choice",
+        "options": ["1 p.m and 8 p.m", "2 p.m and 9 p.m", "3 p.m and 10 p.m", "4 p.m and 11 p.m"],
+        "answer": "2 p.m and 9 p.m"
+    },
+    {
+        "question": "How long do you have to claim your winnings from The Numbers Game?",
+        "type": "multiple-choice",
+        "options": ["Six months", "Nine months", "One year", "Two years"],
+        "answer": "One year"
+    },
+    {
+        "question": "You can select up to four numbers each between 0-9 in The Numbers Game.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "The Numbers Game can only be played for the midday drawing.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Midday and evening drawings",
+        "correct_explanation": "Correct! Midday and evening drawings"
+    },
+    {
+        "question": "A play in The Numbers Game can be purchased for as little as $0.25.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "All winnings from The Numbers Game must be claimed within one year of the drawing date.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "The Numbers Game evening drawing closes at 9:00 pm.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "You can select the same numbers for multiple drawings in The Numbers Game.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "The Numbers Game drawings occur daily at 3 p.m and 10 p.m.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: 2 p.m and 9 p.m",
+        "correct_explanation": "Correct! It occurs 2 p.m and 9 p.m"
+    },
+    {
+        "question": "How many numbers do you select in Mass Cash?",
+        "type": "multiple-choice",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5"
+    },
+    {
+        "question": "What is the range of numbers you can select in Mass Cash?",
+        "type": "multiple-choice",
+        "options": ["1-30", "1-35", "1-40", "1-45"],
+        "answer": "1-35"
+    },
+    {
+        "question": "What is the cost of each Mass Cash play?",
+        "type": "multiple-choice",
+        "options": ["$0.50", "$1", "$2", "$5"],
+        "answer": "$1"
+    },
+    {
+        "question": "At what time does the Mass Cash drawing occur daily?",
+        "type": "multiple-choice",
+        "options": ["8:00 pm", "8:30 pm", "9:00 pm", "9:30 pm"],
+        "answer": "9:00 pm"
+    },
+    {
+        "question": "What is the top prize for Mass Cash?",
+        "type": "multiple-choice",
+        "options": ["$50,000", "$75,000", "$100,000", "$150,000"],
+        "answer": "$100,000"
+    },
+    {
+        "question": "In Mass Cash, what percentage of the amount wagered on each drawing goes into the prize pool?",
+        "type": "multiple-choice",
+        "options": ["50%", "56%", "60%", "65%"],
+        "answer": "56%"
+    },
+    {
+        "question": "How long do you have to claim your winnings from Mass Cash?",
+        "type": "multiple-choice",
+        "options": ["Six months", "Nine months", "One year", "Two years"],
+        "answer": "One year"
+    },
+    {
+        "question": "You can select five numbers between 1-35 in Mass Cash.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Each Mass Cash play costs $2.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $1",
+        "correct_explanation": "Correct! It costs $1"
+    },
+    {
+        "question": "Mass Cash drawings occur daily at 9:00 pm.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "In Mass Cash, approximately 63% of the amount wagered on each drawing goes into the prize pool.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: it's approximately 56%",
+        "correct_explanation": "Correct! Approximately 56%"
+    },
+    {
+        "question": "The top prize for Mass Cash is $150,000.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Top prize is $100,000",
+        "correct_explanation": "Correct! Top prize is $100,000"
+    },
+    {
+        "question": "In Mass Cash, all cash prizes must be claimed within six months following the draw date.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Within one year",
+        "correct_explanation": "Correct! It's within one year"
+    },
+    {
+        "question": "How many numbers do you select in Powerball (excluding the Powerball number)?",
+        "type": "multiple-choice",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5"
+    },
+    {
+        "question": "What is the range of the Powerball number you can select?",
+        "type": "multiple-choice",
+        "options": ["1-25", "1-26", "1-35", "1-45"],
+        "answer": "1-26"
+    },
+    {
+        "question": "What is the cost of each Powerball play?",
+        "type": "multiple-choice",
+        "options": ["$1", "$2", "$3", "$5"],
+        "answer": "$2"
+    },
+    {
+        "question": "When do Powerball drawings occur?",
+        "type": "multiple-choice",
+        "options": ["Every day", "Every Monday, Wednesday, and Friday", "Every Monday, Wednesday, and Saturday", "Every Tuesday, Thursday, and Sunday"],
+        "answer": "Every Monday, Wednesday, and Saturday"
+    },
+    {
+        "question": "What is the additional cost to add Power Play to a Powerball play?",
+        "type": "multiple-choice",
+        "options": ["$0.50", "$1", "$2", "$3"],
+        "answer": "$1"
+    },
+    {
+        "question": "At what time do Powerball drawings take place?",
+        "type": "multiple-choice",
+        "options": ["8:59 p.m.", "9:00 p.m.", "10:00 p.m.", "10:59 p.m."],
+        "answer": "10:59 p.m."
+    },
+    {
+        "question": "In Powerball, what percentage of the amount of money wagered on each drawing goes into the prize pool?",
+        "type": "multiple-choice",
+        "options": ["40%", "50%", "60%", "70%"],
+        "answer": "50%"
+    },
+    {
+        "question": "In Powerball, if a winner fails to claim the jackpot and select a payment option within 60 days, how will the prize be paid?",
+        "type": "multiple-choice",
+        "options": ["As a cash lump sum", "As a charity donation", "As an annuity", "It will be voided"],
+        "answer": "As an annuity"
+    },
+    {
+        "question": "You select five numbers between 1-69 and one Powerball number between 1-26 in Powerball.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Each Powerball play costs $5.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $2",
+        "correct_explanation": "Correct! It costs $2"
+    },
+    {
+        "question": "Powerball drawings occur every Monday, Wednesday, and Saturday at 10:59 p.m.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Adding Power Play costs an additional $2 per play, per drawing.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $1",
+        "correct_explanation": "Correct! It costs $1"
+    },
+    {
+        "question": "In Powerball, approximately 50% of the amount wagered on each drawing goes into the prize pool.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "How many numbers do you select in Mega Millions (excluding the Mega Ball number)?",
+        "type": "multiple-choice",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5"
+    },
+    {
+        "question": "What is the range of the Mega Ball number you can select?",
+        "type": "multiple-choice",
+        "options": ["1-25", "1-26", "1-35", "1-45"],
+        "answer": "1-25"
+    },
+    {
+        "question": "What is the cost of each Mega Millions play?",
+        "type": "multiple-choice",
+        "options": ["$1", "$2", "$3", "$5"],
+        "answer": "$2"
+    },
+    {
+        "question": "When do Mega Millions drawings occur?",
+        "type": "multiple-choice",
+        "options": ["Every day", "Every Monday, Wednesday, and Friday", "Every Tuesday and Friday", "Every Tuesday and Thursday"],
+        "answer": "Every Tuesday and Friday"
+    },
+    {
+        "question": "What is the additional cost to add Megaplier to a Mega Millions play?",
+        "type": "multiple-choice",
+        "options": ["$0.50", "$1", "$2", "$3"],
+        "answer": "$1"
+    },
+    {
+        "question": "At what time do Mega Millions drawings take place?",
+        "type": "multiple-choice",
+        "options": ["8:59 p.m.", "9:50 p.m.", "10:00 p.m.", "11:00 p.m."],
+        "answer": "11:00 p.m."
+    },
+    {
+        "question": "In Mega Millions, what percentage of the amount of money wagered on each drawing goes into the prize pool?",
+        "type": "multiple-choice",
+        "options": ["40%", "50%", "60%", "70%"],
+        "answer": "50%"
+    },
+    {
+        "question": "You select five numbers between 1-70 and one Mega Ball number between 1-25 in Mega Millions.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Each Mega Millions play costs $5.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $2",
+        "correct_explanation": "Correct! It costs $2"
+    },
+    {
+        "question": "Mega Millions drawings occur every Tuesday and Friday at 11:00 p.m.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Adding Megaplier costs an additional $2 per play, per drawing.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $1",
+        "correct_explanation": "Correct! It costs $1"
+        
+    },
+    {
+        "question": "How many numbers do you select in Megabucks?",
+        "type": "multiple-choice",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6"
+    },
+    {
+        "question": "What is the range of numbers you can select in Megabucks?",
+        "type": "multiple-choice",
+        "options": ["1-35", "1-44", "1-50", "1-60"],
+        "answer": "1-44"
+    },
+    {
+        "question": "What is the cost of each Megabucks play?",
+        "type": "multiple-choice",
+        "options": ["$1", "$2", "$3", "$5"],
+        "answer": "$2"
+    },
+    {
+        "question": "When do Megabucks drawings occur?",
+        "type": "multiple-choice",
+        "options": ["Every day", "Every Monday, Wednesday, and Friday", "Every Monday, Wednesday, and Saturday", "Every Tuesday and Thursday"],
+        "answer": "Every Monday, Wednesday, and Saturday"
+    },
+    {
+        "question": "At what time do Megabucks drawings take place?",
+        "type": "multiple-choice",
+        "options": ["8:59 p.m.", "9:00 p.m.", "9:30 p.m.", "10:00 p.m."],
+        "answer": "9:00 p.m."
+    },
+    {
+        "question": "What is the minimum jackpot level in any Megabucks drawing?",
+        "type": "multiple-choice",
+        "options": ["$100,000", "$250,000", "$500,000", "$1,000,000"],
+        "answer": "$500,000"
+    },
+    {
+        "question": "In Megabucks, what percentage of the amount of money wagered on each drawing goes into the prize pool?",
+        "type": "multiple-choice",
+        "options": ["50%", "55.29%", "61.79%", "70%"],
+        "answer": "61.79%"
+    },
+    {
+        "question": "You select six numbers between 1-44 in Megabucks.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Each Megabucks play costs $5.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $2",
+        "correct_explanation": "Correct! It costs $2"
+    },
+    {
+        "question": "Megabucks drawings occur every Monday, Wednesday, and Saturday at 9:00 p.m.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "In Megabucks, approximately 60% of the amount wagered on each drawing goes into the prize pool.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: 61.79%",
+        "correct_explanation": "Correct! It's 61.79%"
+    },
+    {
+        "question": "The minimum jackpot level in any Megabucks drawing is $1,000,000.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: Minimum is $500,000",
+        "correct_explanation": "Correct! The minimum is $500,000"
+    },
+    {
+        "question": "How many numbers do you select in Lucky for Life (excluding the Lucky Ball number)?",
+        "type": "multiple-choice",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5"
+    },
+    {
+        "question": "What is the range of the Lucky Ball number you can select?",
+        "type": "multiple-choice",
+        "options": ["1-18", "1-25", "1-30", "1-35"],
+        "answer": "1-18"
+    },
+    {
+        "question": "What is the cost of each Lucky for Life play?",
+        "type": "multiple-choice",
+        "options": ["$1", "$2", "$3", "$5"],
+        "answer": "$2"
+    },
+    {
+        "question": "At what time do Lucky for Life drawings occur daily?",
+        "type": "multiple-choice",
+        "options": ["9:00 p.m.", "9:38 p.m.", "10:00 p.m.", "10:38 p.m."],
+        "answer": "10:38 p.m."
+    },
+    {
+        "question": "In Lucky for Life, how much of the amount wagered on each drawing goes into the prize pool?",
+        "type": "multiple-choice",
+        "options": ["40%", "50%", "60%", "70%"],
+        "answer": "60%"
+    },
+    {
+        "question": "What is the top prize for Lucky for Life?",
+        "type": "multiple-choice",
+        "options": ["$500 a day for life", "$1,000 a day for life", "$5,000 a day for life", "$10,000 a day for life"],
+        "answer": "$1,000 a day for life"
+    },
+    {
+        "question": "You select five numbers between 1-48 and one Lucky Ball number between 1-18 in Lucky for Life.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "Each Lucky for Life play costs $5.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: It costs $2",
+        "correct_explanation": "Correct! It costs $2"
+    },
+    {
+        "question": "Lucky for Life drawings occur daily at 10:38 p.m.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    },
+    {
+        "question": "In Lucky for Life, approximately 61.79% of the amount wagered on each drawing goes into the prize pool.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "False",
+        "incorrect_explanation": "The answer is False: 60%",
+        "correct_explanation": "Correct! It's 60%"
+    },
+    {
+        "question": "You can select the same numbers for multiple drawings in Lucky for Life.",
+        "type": "true-false",
+        "options": ["True", "False"],
+        "answer": "True"
+    }
+    
+]

@@ -1,0 +1,37 @@
+<!--
+index.html
+
+This file contains the HTML structure of the Lottery Quiz Game. It includes the main container for the quiz, 
+question and answer elements, feedback messages, and result display.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Quiz Game</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startGame()"> 
+    <div id="quiz-container">
+        <h1>Lottery Quiz Game</h1>
+        <div id="question-counter"></div>
+        <div id="question-container">
+            <div id="question">Question text</div>
+            <div id="answer-buttons" class="btn-container">
+                <!-- Answer buttons will be inserted here -->
+            </div>
+            <div id="feedback" class="hide">Correct answer: </div>
+        </div>
+        <button id="next-btn" class="btn hide">Next</button>
+        <div id="result-container">
+            <p id="score">Your score: </p>
+            <p id="result-message"></p>
+            <button id="restart-btn" class="btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
