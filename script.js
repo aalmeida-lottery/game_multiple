@@ -136,6 +136,9 @@ function handleNextQuestion() {
     if (!hasAnswered) {
         showAnswerFeedback();
     } else {
+        if (players.length > 1) {
+            currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+        }
         proceedToNextQuestion();
     }
 }
@@ -143,7 +146,6 @@ function handleNextQuestion() {
 // move to the next question or show the result if it was the last question
 function proceedToNextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
-        currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
         currentQuestionIndex++;
         selectedAnswer = null;
         hasAnswered = false;
